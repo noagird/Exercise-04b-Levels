@@ -33,8 +33,8 @@ func _physics_process(_delta):
 	if direction > 0 and $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = false
 	
 	if position.y > Global.death_zone:
+		 
 		queue_free()
-		
 
 func is_moving():
 	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
@@ -57,3 +57,4 @@ func set_animation(anim):
 
 func die():
 	queue_free()
+	

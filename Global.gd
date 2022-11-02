@@ -15,7 +15,7 @@ func _physics_process(_delta):
 		execute_fade_out(fade_out)
 	if fade_in:
 		execute_fade_in()
-		
+
 
 func start_fade_in():
 	if fade != null:
